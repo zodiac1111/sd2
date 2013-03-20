@@ -14,16 +14,24 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration buildProperties="" description="" id="0.2100763254" name="缺省值" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+				<configuration artifactName="sd2" buildProperties="" description="" id="0.2100763254" name="缺省值" parent="org.eclipse.cdt.build.core.prefbase.cfg">
 					<folderInfo id="0.2100763254." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.1404131419" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
 							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.1404131419.596416812" name=""/>
 							<builder id="org.eclipse.cdt.build.core.settings.default.builder.720884455" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="GNU Make 构建器" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1245127183" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.249007400" name="集合" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1278692563" name="包含路径" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath"/>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.342272788" languageId="org.eclipse.cdt.core.assembly" languageName="集合" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.141832928" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1772372358" name="包含路径" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/sd2/include}&quot;"/>
+									<listOptionValue builtIn="false" value="/home/lee/test/mycheckout/hl3104/trunk/hl3104jd/软件/hl3104/src/protocollib/base102/include"/>
+									<listOptionValue builtIn="false" value="/home/lee/test/mycheckout/hl3104/trunk/hl3104jd/软件/hl3104/include"/>
+									<listOptionValue builtIn="false" value="/home/lee/usr/arm-unknown-linux-uclibcgnueabi/include/c++/4.3.5"/>
+									<listOptionValue builtIn="false" value="/home/lee/usr/arm-linux/include/c++/4.3.5"/>
+								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.893787955" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.785731391" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
@@ -33,7 +41,9 @@
 					</folderInfo>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="sd102;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -46,4 +56,9 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="缺省值">
+			<resource resourceType="PROJECT" workspacePath="/sd2"/>
+		</configuration>
+	</storageModule>
 </cproject>

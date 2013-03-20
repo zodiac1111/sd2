@@ -5,6 +5,8 @@
 #ifndef _INFO_H_
 #define _INFO_H_
 #include "color.h"
+#include "version.h"
+#include <stdio.h>
 //信息字符
 #define PROC_PREFIX "[libsd]" ///<应用程序信息前缀
 #define LIB_DBG PROC_PREFIX FG_PURPLE"Debug>"_COLOR ///<调试信息

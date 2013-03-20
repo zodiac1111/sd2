@@ -2,7 +2,13 @@
 .PHONY : all clean debug  doc version
 
 # 头文件目录 (移动过的话主要在这里定义目录路径)
-INCS = 
+INCS = -Iinclude \
+	-I../include \
+	-I../../../../include \
+	-I../../base102/include \
+	-I"/home/lee/test/mycheckout/hl3104/trunk/hl3104jd/软件/hl3104/include" \
+	-I"/home/lee/test/mycheckout/hl3104/trunk/hl3104jd/软件/hl3104/src/ha/include" \
+	-I"/home/lee/test/mycheckout/hl3104/trunk/hl3104jd/软件/hl3104/src/protocollib/base102/include" 
 # 库文件目录
 LIBS = 
 
