@@ -1,5 +1,5 @@
 #山东规约Makefile文件
-.PHONY : all clean debug doc
+.PHONY : all clean debug doc version
 #库名 & 源文件
 NAME	= sd2
 SOURCE = src/main.cpp
@@ -28,3 +28,7 @@ $(NAME):$(SOURCE)
 #编译生成文档,::依赖每次都编译(?)
 doc::
 	doxygen Doxyfile
+
+#版本
+version::
+	./makeversion.sh
