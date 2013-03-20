@@ -3,7 +3,6 @@
 	<name>sd2</name>
 	<comment></comment>
 	<projects>
-		<project>sd102</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
