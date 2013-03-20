@@ -1,10 +1,10 @@
 #!/bin/bash 
 #使用的文件模板
-VER_FILE_TEMPLATE=./include/version-template.h
+VER_FILE_TEMPLATE=include/version-template.h
 #替换模板文件中的文字
 
 #生成的版本文件名
-VER_FILE=./include/version.h
+VER_FILE=include/version.h
 
 git rev-list HEAD | sort > config.git-hash
 LOCALVER=`wc -l config.git-hash | awk '{print $1}'`
@@ -23,8 +23,8 @@ if [ $LOCALVER \> 1 ]  ; then
     VER="$VER-$(git rev-list HEAD -n 1 | cut -c 1-7)"
     GIT_VERSION=r$VER
 else
-    PATHLEVEL=-1
-    GIT_VERSION="x"
+    PATHLEVEL=0
+    GIT_VERSION="no git"
     VER="x"
 fi
 rm -f config.git-hash
