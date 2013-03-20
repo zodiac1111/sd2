@@ -15,7 +15,7 @@ log.txt
 version.h
 /LINUX/webs
 /LINUX/log.txt
-/LINUX/html/*
+doc/manul/*
 /wwwdemo/cgi-bin/*
 /www/*
 /html/*
