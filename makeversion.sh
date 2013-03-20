@@ -10,7 +10,7 @@ git rev-list HEAD | sort > config.git-hash
 LOCALVER=`wc -l config.git-hash | awk '{print $1}'`
 echo "LOCALVER:" $LOCALVER
 
-if [ $LOCALVER > 1 ]  ; then
+if [ $LOCALVER \> 1 ]  ; then
     VER=`git rev-list origin/master | sort | join config.git-hash - | wc -l | awk '{print $1}'`
     PATHLEVEL=$LOCALVER
     if [ $VER != $LOCALVER ]  ; then
@@ -23,8 +23,8 @@ if [ $LOCALVER > 1 ]  ; then
     VER="$VER-$(git rev-list HEAD -n 1 | cut -c 1-7)"
     GIT_VERSION=r$VER
 else
-    PATHLEVEL=
-    GIT_VERSION=
+    PATHLEVEL=-1
+    GIT_VERSION="x"
     VER="x"
 fi
 rm -f config.git-hash
